@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+coverage/
+playwright-report/
+test-results/
+tmp/
+*.tsbuildinfo
+.env*
+!.env.example
+ByteSpace New Check website.pdf
+landing-reference.txt
+.vercel/
+.DS_Store
