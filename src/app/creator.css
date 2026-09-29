@@ -2,8 +2,13 @@
   background: var(--blue);
   color: #fff;
 }
+.creator-page {
+  background: #fff;
+  color: var(--ink);
+}
 .creator-hero {
   padding: 32px 0 78px;
+  color: #fff;
 }
 .creator-heading {
   display: flex;

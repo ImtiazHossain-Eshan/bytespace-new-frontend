@@ -2,8 +2,13 @@
   background: var(--blue);
   color: #fff;
 }
+.course-detail {
+  background: #fff;
+  color: var(--ink);
+}
 .detail-hero {
   padding: 24px 0 42px;
+  color: #fff;
 }
 .detail-heading {
   display: flex;

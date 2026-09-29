@@ -2,8 +2,13 @@
   background: var(--blue);
   color: #fff;
 }
+.listing-page {
+  background: #fff;
+  color: var(--ink);
+}
 .listing-hero {
   padding: 40px 0 84px;
+  color: #fff;
 }
 .listing-hero h1 {
   margin: 24px 0 34px;
