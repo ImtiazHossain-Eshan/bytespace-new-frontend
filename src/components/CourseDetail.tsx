@@ -5,7 +5,6 @@ import {
   BarChart3,
   Check,
   FileText,
-  Play,
   Share2,
   Star,
   Users,
@@ -146,9 +145,6 @@ export function CourseDetail({ slug }: { slug: string }) {
                 sizes="(max-width: 900px) 100vw, 62vw"
                 priority
               />
-              <span className="detail-play">
-                <Play size={35} fill="currentColor" />
-              </span>
             </button>
             <aside className="detail-sidebar">
               <h2>112 Lessons (24 hours)</h2>

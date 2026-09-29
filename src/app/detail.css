@@ -74,19 +74,6 @@
 .detail-video > img {
   object-fit: cover;
 }
-.detail-play {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  display: grid;
-  place-items: center;
-  width: 82px;
-  height: 82px;
-  transform: translate(-50%, -50%);
-  border-radius: 20px;
-  background: rgba(112, 82, 71, 0.76);
-  color: #fff;
-}
 .detail-sidebar {
   margin-bottom: -230px;
   padding: 40px;
