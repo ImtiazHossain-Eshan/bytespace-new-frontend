@@ -5,6 +5,7 @@ import {
   BarChart3,
   Check,
   FileText,
+  Play,
   Share2,
   Star,
   Users,
@@ -132,12 +133,7 @@ export function CourseDetail({ slug }: { slug: string }) {
             </button>
           </div>
           <div className="detail-layout">
-            <button
-              className="detail-video"
-              type="button"
-              onClick={() => setPreviewOpen(true)}
-              aria-label="Play course preview"
-            >
+            <div className="detail-video">
               <Image
                 src="/assets/detail-poster.webp"
                 alt="Course preview"
@@ -145,7 +141,17 @@ export function CourseDetail({ slug }: { slug: string }) {
                 sizes="(max-width: 900px) 100vw, 62vw"
                 priority
               />
-            </button>
+              <button
+                className="detail-video__play"
+                type="button"
+                onClick={() => setPreviewOpen(true)}
+                aria-label="Play course preview"
+              >
+                <span aria-hidden="true">
+                  <Play size={34} fill="currentColor" strokeWidth={1.5} />
+                </span>
+              </button>
+            </div>
             <aside className="detail-sidebar">
               <h2>112 Lessons (24 hours)</h2>
               {[
@@ -258,17 +264,19 @@ export function CourseDetail({ slug }: { slug: string }) {
             >
               ×
             </button>
-            <Image
-              src="/assets/detail-poster.webp"
-              alt="Course preview"
-              width={720}
-              height={479}
-            />
+            <div className="preview-dialog__media">
+              <Image
+                src={course.image}
+                alt={`${course.title} preview`}
+                width={720}
+                height={479}
+              />
+              <span className="preview-dialog__play" aria-hidden="true">
+                <Play size={30} fill="currentColor" strokeWidth={1.5} />
+              </span>
+            </div>
             <h2>Course preview</h2>
-            <p>
-              This preview image is available in the assessment design. Full
-              lesson video becomes available after enrollment.
-            </p>
+            <p>Preview opened. Enroll to unlock the full lesson video.</p>
           </section>
         </div>
       )}
