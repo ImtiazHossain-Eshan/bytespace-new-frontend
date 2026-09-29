@@ -38,11 +38,11 @@
     <rect x="727" y="282" width="84" height="25" rx="12" fill="#CBFC01"/>
     <rect x="824" y="282" width="112" height="25" rx="12" fill="#E6E9F3"/>
   </g>
-  <g transform="translate(90 420)">
-    <path d="M0 0H28V28H0V0Z" fill="#D4FB20"/>
-    <path d="M0 28H28C47 28 61 42 61 61H28C12 61 0 48 0 28Z" fill="#D4FB20"/>
-    <path d="M28 0V28H61C61 12.5 47.5 0 28 0Z" fill="#D4FB20"/>
-    <path d="M28 28H61L28 61V28Z" fill="#003BE2"/>
-    <text x="78" y="43" fill="#F5F5F6" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-1.2">ByteSpace</text>
+  <g transform="translate(90 420) scale(1.9365)">
+    <path d="M0 0H12.5V16H0V0Z" fill="#D4FB20"/>
+    <path d="M0 16H12.5C21.2 16 28 22.7 28 31.5H14C6.3 31.5 0 25.3 0 16Z" fill="#D4FB20"/>
+    <path d="M12.5 0V16H28C28 7.3 21.2 0 12.5 0Z" fill="#D4FB20"/>
+    <path d="M12.5 16H28L12.5 31.5V16Z" fill="#003BE2"/>
+    <text x="40.25" y="22.2" fill="#F5F5F6" font-family="Arial, sans-serif" font-size="17.5" font-weight="700" letter-spacing="-.6">ByteSpace</text>
   </g>
 </svg>

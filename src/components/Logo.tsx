@@ -11,9 +11,9 @@ export function Logo({ compact = false, light = false }: LogoProps) {
     >
       <svg
         aria-hidden="true"
-        viewBox="0 0 36 36"
-        width="32"
-        height="32"
+        viewBox="4 2 28 31.5"
+        width="28.88"
+        height="31.5"
         fill="none"
       >
         <path d="M4 2h12.5v16H4V2Z" fill="var(--logo-lime)" />

@@ -110,6 +110,8 @@ img {
 .brand svg {
   color: var(--lime);
   flex: none;
+  width: 28.88px;
+  height: 31.5px;
 }
 .brand--light {
   color: var(--logo-white);
@@ -385,8 +387,8 @@ img {
     font-size: 20px;
   }
   .brand svg {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 26.25px;
   }
   .blue-grid {
     background-size: 80px 80px;
