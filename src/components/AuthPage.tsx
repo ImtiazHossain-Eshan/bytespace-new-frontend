@@ -9,7 +9,7 @@ export function AuthPage({ mode }: { mode: "login" | "signup" }) {
     <main className="auth-page blue-grid">
       <div className="auth-layout page-container">
         <aside className="auth-story">
-          <Logo compact light />
+          <Logo light />
           <div className="auth-story__copy">
             <h1>{signup ? "Sign up and come in" : "Sign in with ease"}</h1>
             <p>

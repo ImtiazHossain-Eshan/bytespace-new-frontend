@@ -39,10 +39,10 @@
     <rect x="824" y="282" width="112" height="25" rx="12" fill="#E6E9F3"/>
   </g>
   <g transform="translate(90 420)">
-    <path d="M0 0H28V28H0V0Z" fill="#CBFC01"/>
-    <path d="M0 28H28C47 28 61 42 61 61H28C12 61 0 48 0 28Z" fill="#CBFC01"/>
-    <path d="M28 0V28H61C61 12.5 47.5 0 28 0Z" fill="#CBFC01" opacity=".92"/>
+    <path d="M0 0H28V28H0V0Z" fill="#D4FB20"/>
+    <path d="M0 28H28C47 28 61 42 61 61H28C12 61 0 48 0 28Z" fill="#D4FB20"/>
+    <path d="M28 0V28H61C61 12.5 47.5 0 28 0Z" fill="#D4FB20"/>
     <path d="M28 28H61L28 61V28Z" fill="#003BE2"/>
-    <text x="78" y="43" fill="white" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-1.2">ByteSpace</text>
+    <text x="78" y="43" fill="#F5F5F6" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-1.2">ByteSpace</text>
   </g>
 </svg>

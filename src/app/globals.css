@@ -4,6 +4,8 @@
   --blue: #003be2;
   --blue-light: #1f52e5;
   --lime: #cbfc01;
+  --logo-lime: #d4fb20;
+  --logo-white: #f5f5f6;
   --ink: #202124;
   --deep-ink: #090d20;
   --muted: #80848f;
@@ -110,7 +112,7 @@ img {
   flex: none;
 }
 .brand--light {
-  color: #fff;
+  color: var(--logo-white);
 }
 .site-header {
   position: relative;
