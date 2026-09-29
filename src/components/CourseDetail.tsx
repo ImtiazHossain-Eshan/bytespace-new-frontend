@@ -74,6 +74,7 @@ export function CourseDetail({ slug }: { slug: string }) {
   const params = useSearchParams();
   const [shared, setShared] = useState(false);
   const [previewOpen, setPreviewOpen] = useState(false);
+  const [ratingFilter, setRatingFilter] = useState("all");
   const course = courses.find((item) => item.slug === slug) ?? courses[1];
   const tab = (params.get("tab") as DetailTab | null) ?? "about";
 
@@ -97,8 +98,16 @@ export function CourseDetail({ slug }: { slug: string }) {
         <div className="page-container">
           <div className="detail-heading">
             <div>
-              <h1>Build Digital Asset: A Comprehensive Guide</h1>
-              <p>Unlock the Power of Digital Creation with Expert Guidance</p>
+              <h1>
+                {course.slug === "build-digital-asset"
+                  ? "Build Digital Asset: A Comprehensive Guide"
+                  : course.title}
+              </h1>
+              <p>
+                {course.slug === "build-digital-asset"
+                  ? "Unlock the Power of Digital Creation with Expert Guidance"
+                  : "Learn from experienced creators with practical, self-paced lessons."}
+              </p>
               <p className="detail-author">
                 by{" "}
                 <Link href="/creators/purepearl-studio">purepearl studio</Link>
@@ -226,7 +235,12 @@ export function CourseDetail({ slug }: { slug: string }) {
         </nav>
         {tab === "about" && <AboutTab />}
         {tab === "lessons" && <LessonsTab />}
-        {tab === "reviews" && <ReviewsTab />}
+        {tab === "reviews" && (
+          <ReviewsTab
+            ratingFilter={ratingFilter}
+            setRatingFilter={setRatingFilter}
+          />
+        )}
       </section>
       {previewOpen && (
         <div
@@ -373,7 +387,24 @@ function LessonsTab() {
   );
 }
 
-function ReviewsTab() {
+function ReviewsTab({
+  ratingFilter,
+  setRatingFilter,
+}: {
+  ratingFilter: string;
+  setRatingFilter: (value: string) => void;
+}) {
+  const visibleIndexes: Record<string, number[]> = {
+    all: [0, 1, 2, 3],
+    "5": [0, 1],
+    "4": [2],
+    "3": [3],
+    "2": [],
+    "1": [],
+  };
+  const visibleReviews = reviews.filter((_, index) =>
+    visibleIndexes[ratingFilter]?.includes(index),
+  );
   return (
     <div className="detail-tab-content">
       <h2>What Learners Are Saying</h2>
@@ -400,33 +431,45 @@ function ReviewsTab() {
       </div>
       <h2>Individual Reviews:</h2>
       <div className="review-filters">
-        {["All rating", "★ 5", "★ 4", "★ 3", "★ 2", "★ 1"].map(
-          (filter, index) => (
-            <button
-              className={index === 0 ? "active" : ""}
-              type="button"
-              key={filter}
-            >
-              {filter}
-            </button>
-          ),
-        )}
+        {[
+          ["all", "All rating"],
+          ["5", "★ 5"],
+          ["4", "★ 4"],
+          ["3", "★ 3"],
+          ["2", "★ 2"],
+          ["1", "★ 1"],
+        ].map(([value, filter]) => (
+          <button
+            className={ratingFilter === value ? "active" : ""}
+            type="button"
+            key={filter}
+            onClick={() => setRatingFilter(value)}
+          >
+            {filter}
+          </button>
+        ))}
       </div>
       <div className="review-list">
-        {reviews.map(([name, quote, image]) => (
-          <article key={name}>
-            <div className="review-head">
-              <Image src={image} alt="" width={50} height={50} />
-              <div>
-                <strong>{name}</strong>
-                <span>UI/UX Designer</span>
+        {visibleReviews.length ? (
+          visibleReviews.map(([name, quote, image]) => (
+            <article key={name}>
+              <div className="review-head">
+                <Image src={image} alt="" width={50} height={50} />
+                <div>
+                  <strong>{name}</strong>
+                  <span>UI/UX Designer</span>
+                </div>
+                <time>a year ago</time>
               </div>
-              <time>a year ago</time>
-            </div>
-            <p className="review-stars">★★★★★</p>
-            <p>“{quote}”</p>
-          </article>
-        ))}
+              <p className="review-stars">★★★★★</p>
+              <p>“{quote}”</p>
+            </article>
+          ))
+        ) : (
+          <p className="catalog-empty">
+            No reviews at this rating in this sample.
+          </p>
+        )}
       </div>
     </div>
   );

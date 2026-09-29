@@ -10,9 +10,12 @@ import { courses } from "@/data/site";
 export function CreatorProfile() {
   const [following, setFollowing] = useState(false);
   const [sort, setSort] = useState("relevant");
-  const creatorCourses = [...courses].sort((a, b) =>
-    sort === "title" ? a.title.localeCompare(b.title) : 0,
-  );
+  const [level, setLevel] = useState("all");
+  const [category, setCategory] = useState("all");
+  const creatorCourses = [...courses]
+    .filter(() => level === "all" || level === "beginner")
+    .filter((course) => category === "all" || course.category === category)
+    .sort((a, b) => (sort === "title" ? a.title.localeCompare(b.title) : 0));
   return (
     <main className="creator-page">
       <section className="creator-hero blue-grid">
@@ -62,15 +65,46 @@ export function CreatorProfile() {
       <section className="creator-courses page-container">
         <div className="creator-toolbar">
           <div>
-            <button type="button">
-              <Filter size={17} /> Filter
+            <button
+              type="button"
+              onClick={() => {
+                setLevel("all");
+                setCategory("all");
+              }}
+            >
+              <Filter size={17} /> Reset filters
             </button>
-            <button type="button">
-              <BarChart3 size={17} /> Level
-            </button>
-            <button type="button">
-              <Users size={17} /> Category
-            </button>
+            <label>
+              <BarChart3 size={17} />
+              <span className="sr-only">Filter by level</span>
+              <select
+                aria-label="Filter creator courses by level"
+                value={level}
+                onChange={(event) => setLevel(event.target.value)}
+              >
+                <option value="all">All levels</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+              </select>
+            </label>
+            <label>
+              <Users size={17} />
+              <span className="sr-only">Filter by category</span>
+              <select
+                aria-label="Filter creator courses by category"
+                value={category}
+                onChange={(event) => setCategory(event.target.value)}
+              >
+                <option value="all">All categories</option>
+                {[...new Set(courses.map((course) => course.category))].map(
+                  (item) => (
+                    <option key={item} value={item}>
+                      {item}
+                    </option>
+                  ),
+                )}
+              </select>
+            </label>
           </div>
           <label>
             <ListFilter size={17} />

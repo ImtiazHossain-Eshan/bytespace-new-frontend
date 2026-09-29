@@ -14,6 +14,7 @@ export function CourseListing() {
   const params = useSearchParams();
   const [query, setQuery] = useState(params.get("q") ?? "");
   const selectedCategory = params.get("category") ?? "Featured";
+  const selectedLevel = params.get("level") ?? "all";
   const sort = params.get("sort") ?? "relevant";
   const page = Number(params.get("page") ?? "1");
 
@@ -24,12 +25,14 @@ export function CourseListing() {
         `${course.title} ${course.category} purepearl studio`.toLowerCase();
       const categoryMatch =
         selectedCategory === "Featured" || course.category === selectedCategory;
-      return categoryMatch && (!term || text.includes(term));
+      const levelMatch =
+        selectedLevel === "all" || selectedLevel === "beginner";
+      return categoryMatch && levelMatch && (!term || text.includes(term));
     });
     return [...matches].sort((a, b) =>
       sort === "title" ? a.title.localeCompare(b.title) : 0,
     );
-  }, [params, selectedCategory, sort]);
+  }, [params, selectedCategory, selectedLevel, sort]);
 
   const pageSize = 6;
   const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
@@ -41,10 +44,9 @@ export function CourseListing() {
 
   function update(values: Record<string, string | null>) {
     const next = new URLSearchParams(params.toString());
-    Object.entries(values).forEach(([key, value]) => {
-      if (value) next.set(key, value);
-      else next.delete(key);
-    });
+    Object.entries(values).forEach(([key, value]) =>
+      value ? next.set(key, value) : next.delete(key),
+    );
     next.delete("page");
     router.push(`${pathname}?${next.toString()}`);
   }
@@ -52,6 +54,12 @@ export function CourseListing() {
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     update({ q: query.trim() || null });
+  }
+
+  function pageUrl(number: number) {
+    const next = new URLSearchParams(params.toString());
+    next.set("page", String(number));
+    return `${pathname}?${next.toString()}`;
   }
 
   return (
@@ -120,7 +128,11 @@ export function CourseListing() {
             <label className="listing-select">
               <SlidersHorizontal size={17} aria-hidden="true" />
               <span>Level</span>
-              <select aria-label="Filter by level" defaultValue="all">
+              <select
+                aria-label="Filter by level"
+                value={selectedLevel}
+                onChange={(event) => update({ level: event.target.value })}
+              >
                 <option value="all">All levels</option>
                 <option value="beginner">Beginner</option>
                 <option value="intermediate">Intermediate</option>
@@ -142,7 +154,7 @@ export function CourseListing() {
         </div>
         {params.get("q") && (
           <p className="listing-feedback">
-            Results for “{params.get("q")}” · {filtered.length} courses
+            Results for “{params.get("q")}” · {filtered.length} courses{" "}
             <button type="button" onClick={() => update({ q: null })}>
               Clear
             </button>
@@ -161,7 +173,7 @@ export function CourseListing() {
             <button
               className="pill-button"
               type="button"
-              onClick={() => update({ q: null, category: null })}
+              onClick={() => update({ q: null, category: null, level: null })}
             >
               Browse all courses
             </button>
@@ -172,11 +184,7 @@ export function CourseListing() {
             type="button"
             aria-label="Previous page"
             disabled={currentPage === 1}
-            onClick={() =>
-              router.push(
-                `${pathname}?${new URLSearchParams({ ...Object.fromEntries(params), page: String(currentPage - 1) })}`,
-              )
-            }
+            onClick={() => router.push(pageUrl(currentPage - 1))}
           >
             ←
           </button>
@@ -189,11 +197,7 @@ export function CourseListing() {
               className={number === currentPage ? "pagination__active" : ""}
               key={number}
               aria-current={number === currentPage ? "page" : undefined}
-              onClick={() =>
-                router.push(
-                  `${pathname}?${new URLSearchParams({ ...Object.fromEntries(params), page: String(number) })}`,
-                )
-              }
+              onClick={() => router.push(pageUrl(number))}
             >
               {number}
             </button>
@@ -202,11 +206,7 @@ export function CourseListing() {
             type="button"
             aria-label="Next page"
             disabled={currentPage === pageCount}
-            onClick={() =>
-              router.push(
-                `${pathname}?${new URLSearchParams({ ...Object.fromEntries(params), page: String(currentPage + 1) })}`,
-              )
-            }
+            onClick={() => router.push(pageUrl(currentPage + 1))}
           >
             →
           </button>
