@@ -1,0 +1,45 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ByteSpace learning platform banner</title>
+  <desc id="desc">A blue grid with floating course cards, a lime learning path, and the ByteSpace mark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="44" y1="20" x2="1140" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07194E"/>
+      <stop offset="1" stop-color="#003BE2"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="252" y1="367" x2="961" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CBFC01"/>
+      <stop offset="1" stop-color="#F0FF75"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#00133F" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="520" rx="18" fill="url(#bg)"/>
+  <g opacity=".14" stroke="#fff">
+    <path d="M0 86H1200M0 172H1200M0 258H1200M0 344H1200M0 430H1200"/>
+    <path d="M96 0V520M192 0V520M288 0V520M384 0V520M480 0V520M576 0V520M672 0V520M768 0V520M864 0V520M960 0V520M1056 0V520M1152 0V520"/>
+  </g>
+  <circle cx="1032" cy="94" r="84" fill="#CBFC01" opacity=".9"/>
+  <path d="M113 390C281 274 391 405 535 316C665 236 759 294 902 190C967 143 1020 115 1097 96" stroke="url(#lime)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1097" cy="96" r="9" fill="#CBFC01"/>
+  <g filter="url(#shadow)">
+    <rect x="112" y="105" width="370" height="224" rx="18" fill="#FAFAF7"/>
+    <rect x="139" y="136" width="168" height="108" rx="12" fill="#DDE7FF"/>
+    <rect x="328" y="136" width="126" height="16" rx="8" fill="#0A2B9D" opacity=".9"/>
+    <rect x="328" y="170" width="94" height="12" rx="6" fill="#9AA9D7"/>
+    <rect x="328" y="197" width="112" height="12" rx="6" fill="#9AA9D7"/>
+    <rect x="139" y="270" width="315" height="17" rx="8" fill="#CBFC01"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="695" y="142" width="320" height="198" rx="18" fill="#FAFAF7"/>
+    <rect x="727" y="176" width="256" height="17" rx="8" fill="#0A2B9D" opacity=".9"/>
+    <rect x="727" y="214" width="182" height="13" rx="6" fill="#9AA9D7"/>
+    <rect x="727" y="241" width="226" height="13" rx="6" fill="#9AA9D7"/>
+    <rect x="727" y="282" width="84" height="25" rx="12" fill="#CBFC01"/>
+    <rect x="824" y="282" width="112" height="25" rx="12" fill="#E6E9F3"/>
+  </g>
+  <g transform="translate(90 420)">
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA/CAYAAACxdtubAAAEqUlEQVR4AeSZW3LbNhSGf+qW6Zu8A+S1dafSCiqvoO4K6q4g6gpircDqCpyuwO0KlB3IbZ3k0dxB9JaMSYn5f4T0WI5uNAGISjA8gsQLgI/nAuCocZOYjPKeMqVM3iTm5f+JGeArK42cp8u6RxlkwHkETAj9/s2duby5MzqPQy8F6CqObhbhDBGspt99MAYHXDaBPsQazFu4fZuYi2lmpP2H1w7i+66gFmYBDDsJpoeo3VKgoqU5m0UTk0Pz3dKgBSx996BgnwQqWEpXsIdixlVAyYquzPgQAlRVUMhnn6V4Keo6S2VQwSka13015QRUsFxN1VqrzkAJO6izVl2CMgjjFwLX8nAKSsKzukZg16DdVopa7nZcg9bWfH2AGpQu/h9wDppl+DZMl7bbRQ2Lc42S8ZsBBfNNSrhVFZuwY7Lu6u2deVF1/+tDo1QqZqheZBk9JutOFxHGdIkpk3W3lMunbA29gEYRXIDicdFOiXKm/FVZYC+gyHANz0XA2gvffDTDXbryAkpzi3fpvOo9hDVo4kLa3bb09AX6T1WIMs8T+GxbdtILaNqCTNeLn2JNIazNTq4LVF5A+1EsyFdrxuTttGAZqK5WmbEXUJHQT4Oar/rMpbcqh+UN9Md2/JodS1iFPZTD+i81pw979QaqTqjVkep9SHOBpf+JvILmWh3vA1T+2knxoujbK6g6SVoYIUKMPRRa1LAITN5BFYGTJk7IqUjMKujRfZbgN/W4E6hurCKEjZHtB5YbAhuUgoDqJR134msLG96MezLfYKAFrDXjsLA2MxkUVLAyY8L2+T1YNG5m+Ck4KAFB2NlxO/6DEfk5f3tfVHAB0dsLKOHsQeCYwCf03T4iaG3sJTIzEdDdKyjyokB13Ip/J/RRExjwn7lzANK0k10Q59N6gCIvio4pEGlghJ1JE3BUpFEv5lJmfPq7kZnDi3aKWwJO+OyQsKdMhht+V5KMVbWjwbe2N9AccFLAEcUJFNtZPjLEDQRIZC33CshECTmOAGlv8Pi669802+sGTSR23fCm9t5lxnTmmBLyfmex6X4X12i1FjRYJkDZ9nlKhWaQ7yFU+djCv41QiSxBcq6Uqfrxw/Vv7TXn61lDH7xHkzUrP4fMNWrgiq2HhgRfrmWjnwL0U2/mq8CzmGOSTxUIWhhtuRD5S31a0DzloZWIzjmVVorzLLBPFgDR52Wl/WlB9Y1aHal2KdZkAVfRtdzQqM0f2vE90z1orlWnWydG2Mtyo3N4dwNaL6Mo96A6wW3TiM7rZF61URbwvhjA6jIufLO4vASqCMxNsZNEFqPs3kzWKqwgzOslUJ0jbAwHiSwGIJuUUpvBhH6ZzHHS//zfz1K3X4DqqvaHFvaJuR2uY2WyYefMAvK7OBbDY1kJqpsEa834CbBs9Ge1EUq4bv47aaPfXwOpcXBMqlYLTSAmbJ9XS0VjTlXSKB/zfsy4KxlyGvmVY9243dwIqmGqAaY4yiayQpjtmEHn+fed+E+Nc5tsBS0aIHCZRJYpnnNcz2im5wQ80svnmDZq8WHfO4MWD8l3OUdtS2S50OiMSzjNAK9knkqaEe6IZjoqA1iM+xMAAAD//yM7vOkAAAAGSURBVAMAnXjU/2v8hGkAAAAASUVORK5CYII=" x="0" y="0" width="58" height="63" preserveAspectRatio="none"/>
+    <text x="78" y="43" fill="#F5F5F6" font-family="Arial, sans-serif" font-size="33.9" font-weight="700" letter-spacing="-1.16">ByteSpace</text>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+.git/
+.next/
+node_modules/
+tmp/
+coverage/
+test-results/
+playwright-report/
+*.pdf
+*.eml
+landing-reference.txt
