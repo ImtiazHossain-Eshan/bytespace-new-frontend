@@ -1,6 +1,22 @@
-# ByteSpace
-
-Frontend implementation for the Doin Tech Jr. Software Engineer (Frontend) assessment.
+<div align="center">
+  <img src="docs/bytespace-readme-banner.svg" alt="ByteSpace learning platform" width="100%" />
+  <h1>ByteSpace</h1>
+  <hr />
+  <p><strong>A responsive learning platform for curious learners and independent creators.</strong><br />Explore practical courses, follow creators, and build skills at your own pace.</p>
+  <p>
+    <img src="https://img.shields.io/badge/Next.js-16-black?logo=next.js" alt="Next.js 16" />
+    <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white" alt="TypeScript 5.9" />
+    <img src="https://img.shields.io/badge/Poppins-Local-6C4AB6" alt="Poppins font" />
+    <img src="https://img.shields.io/badge/Deploy-Vercel-000?logo=vercel" alt="Deployed on Vercel" />
+  </p>
+  <p>
+    <a href="https://bytespace-new-frontend.vercel.app">Live demo</a> ·
+    <a href="#features">Features</a> ·
+    <a href="#run-locally">Get started</a> ·
+    <a href="#checks">Checks</a>
+  </p>
+  <sub>Designed and built for the Doin Tech Jr. Software Engineer (Frontend) assessment.</sub>
+</div>
 
 ## Live demo
 

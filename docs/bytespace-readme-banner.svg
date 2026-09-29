@@ -1,0 +1,46 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ByteSpace learning platform banner</title>
+  <desc id="desc">A blue grid with floating course cards, a lime learning path, and the ByteSpace mark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="44" y1="20" x2="1140" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07194E"/>
+      <stop offset="1" stop-color="#003BE2"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="252" y1="367" x2="961" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CBFC01"/>
+      <stop offset="1" stop-color="#F0FF75"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#00133F" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="520" rx="18" fill="url(#bg)"/>
+  <g opacity=".14" stroke="#fff">
+    <path d="M0 86H1200M0 172H1200M0 258H1200M0 344H1200M0 430H1200"/>
+    <path d="M96 0V520M192 0V520M288 0V520M384 0V520M480 0V520M576 0V520M672 0V520M768 0V520M864 0V520M960 0V520M1056 0V520M1152 0V520"/>
+  </g>
+  <circle cx="1032" cy="94" r="84" fill="#CBFC01" opacity=".9"/>
+  <path d="M113 390C281 274 391 405 535 316C665 236 759 294 902 190C967 143 1020 115 1097 96" stroke="url(#lime)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1097" cy="96" r="9" fill="#CBFC01"/>
+  <g filter="url(#shadow)">
+    <rect x="112" y="105" width="370" height="224" rx="18" fill="#FAFAF7"/>
+    <rect x="139" y="136" width="168" height="108" rx="12" fill="#DDE7FF"/>
+    <rect x="328" y="136" width="126" height="16" rx="8" fill="#0A2B9D" opacity=".9"/>
+    <rect x="328" y="170" width="94" height="12" rx="6" fill="#9AA9D7"/>
+    <rect x="328" y="197" width="112" height="12" rx="6" fill="#9AA9D7"/>
+    <rect x="139" y="270" width="315" height="17" rx="8" fill="#CBFC01"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="695" y="142" width="320" height="198" rx="18" fill="#FAFAF7"/>
+    <rect x="727" y="176" width="256" height="17" rx="8" fill="#0A2B9D" opacity=".9"/>
+    <rect x="727" y="214" width="182" height="13" rx="6" fill="#9AA9D7"/>
+    <rect x="727" y="241" width="226" height="13" rx="6" fill="#9AA9D7"/>
+    <rect x="727" y="282" width="84" height="25" rx="12" fill="#CBFC01"/>
+    <rect x="824" y="282" width="112" height="25" rx="12" fill="#E6E9F3"/>
+  </g>
+  <g transform="translate(90 420)">
+    <path d="M0 0H28V28H0V0Z" fill="#CBFC01"/>
+    <path d="M0 28H28C47 28 61 42 61 61H28C12 61 0 48 0 28Z" fill="#CBFC01"/>
+    <text x="78" y="43" fill="white" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-1.2">ByteSpace</text>
+  </g>
+</svg>
