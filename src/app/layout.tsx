@@ -7,7 +7,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "ByteSpace — Discover courses and creators",
+    default: "ByteSpace | Discover courses and creators",
     template: "%s | ByteSpace",
   },
   description:
