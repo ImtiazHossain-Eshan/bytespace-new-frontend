@@ -1,0 +1,194 @@
+.creator-shell {
+  background: var(--blue);
+  color: #fff;
+}
+.creator-hero {
+  padding: 32px 0 78px;
+}
+.creator-heading {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.creator-heading img {
+  border-radius: 22px;
+  object-fit: cover;
+}
+.creator-heading h1 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 50px);
+  letter-spacing: -0.05em;
+}
+.creator-heading h1 span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 12px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--lime);
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.creator-heading p {
+  margin: 10px 0 0;
+}
+.creator-bio {
+  max-width: 1160px;
+  margin: 42px 0 38px;
+  line-height: 1.7;
+}
+.creator-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.creator-actions > div {
+  display: flex;
+  gap: 14px;
+}
+.creator-actions span {
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+}
+.creator-actions b {
+  color: var(--blue);
+  margin-right: 7px;
+}
+.creator-courses {
+  padding-top: 62px;
+  padding-bottom: 90px;
+}
+.creator-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 38px;
+}
+.creator-toolbar > div {
+  display: flex;
+  gap: 14px;
+}
+.creator-toolbar button,
+.creator-toolbar label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: #4a4e57;
+}
+.creator-toolbar select {
+  border: 0;
+  outline: 0;
+  color: inherit;
+  background: transparent;
+}
+.creator-course-link {
+  display: block;
+  padding: 15px;
+  border: 1px solid #d3d5db;
+  border-radius: 24px;
+  color: var(--ink);
+  transition: 0.2s ease;
+}
+.creator-course-link:hover {
+  border-color: var(--blue);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 59, 226, 0.1);
+}
+.creator-course-image {
+  position: relative;
+  height: 195px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.creator-course-image > img {
+  object-fit: cover;
+}
+.creator-course-image > div {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+.creator-course-image span {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(235, 236, 238, 0.85);
+  font-size: 10px;
+  white-space: nowrap;
+}
+.creator-course-link h2 {
+  overflow: hidden;
+  margin: 18px 0 2px;
+  font-size: 19px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.creator-course-link > p {
+  margin: 0 0 17px;
+  color: #777;
+  font-size: 11px;
+}
+.creator-course-link > p span {
+  color: var(--blue);
+}
+.creator-course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.creator-course-meta > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: #f5f5f6;
+  font-size: 11px;
+}
+.creator-course-link > strong {
+  display: block;
+  margin-top: 15px;
+  color: var(--blue);
+  font-size: 20px;
+}
+.creator-course-link > strong small {
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 400;
+}
+@media (max-width: 700px) {
+  .creator-heading {
+    align-items: flex-start;
+  }
+  .creator-heading h1 span {
+    display: block;
+    width: fit-content;
+    margin: 10px 0 0;
+  }
+  .creator-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .creator-actions > div {
+    flex-wrap: wrap;
+  }
+  .creator-toolbar {
+    flex-direction: column;
+  }
+  .creator-toolbar > div {
+    flex-wrap: wrap;
+  }
+}

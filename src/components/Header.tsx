@@ -48,10 +48,13 @@ export function Header() {
           <Link href="/" onClick={() => setOpen(false)}>
             Home
           </Link>
-          <Link href="/#courses" onClick={() => setOpen(false)}>
+          <Link href="/courses" onClick={() => setOpen(false)}>
             Courses
           </Link>
-          <Link href="/#creators" onClick={() => setOpen(false)}>
+          <Link
+            href="/creators/purepearl-studio"
+            onClick={() => setOpen(false)}
+          >
             Creators
           </Link>
           <div className="site-nav__mobile-actions">

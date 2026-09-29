@@ -2,51 +2,54 @@
 
 import { BarChart3, Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { AvatarStack } from "./AvatarStack";
 import { categories, courses, type Course } from "@/data/site";
 
-function CourseCard({ course }: { course: Course }) {
+export function CourseCard({ course }: { course: Course }) {
   return (
-    <article className="course-card">
-      <div className="course-card__image">
-        <Image
-          src={course.image}
-          alt=""
-          fill
-          sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw"
-        />
-        <div
-          className="course-card__facts"
-          aria-label="17 lessons, 2 hours 16 minutes, 59 comments"
-        >
-          <span>17 Lessons</span>
-          <span>2 hours 16 mins</span>
-          <span>59 Comments</span>
+    <Link className="course-card-link" href={`/courses/${course.slug}`}>
+      <article className="course-card">
+        <div className="course-card__image">
+          <Image
+            src={course.image}
+            alt=""
+            fill
+            sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw"
+          />
+          <div
+            className="course-card__facts"
+            aria-label="17 lessons, 2 hours 16 minutes, 59 comments"
+          >
+            <span>17 Lessons</span>
+            <span>2 hours 16 mins</span>
+            <span>59 Comments</span>
+          </div>
         </div>
-      </div>
-      <div className="course-card__title-row">
-        <h3 title={course.title}>{course.title}</h3>
-        <span className="course-card__rating">
-          4.5 <Star size={17} fill="currentColor" aria-hidden="true" />
-        </span>
-      </div>
-      <p className="course-card__author">
-        by <span>purepearl studio</span>
-      </p>
-      <div className="course-card__meta">
-        <span className="course-card__level">
-          <BarChart3 size={15} fill="currentColor" aria-hidden="true" />
-          Beginner
-        </span>
-        <AvatarStack />
-      </div>
-      <p className="course-card__price">
-        <strong>$25</strong>
-        <span>/lifetime</span>
-      </p>
-    </article>
+        <div className="course-card__title-row">
+          <h3 title={course.title}>{course.title}</h3>
+          <span className="course-card__rating">
+            4.5 <Star size={17} fill="currentColor" aria-hidden="true" />
+          </span>
+        </div>
+        <p className="course-card__author">
+          by <span>purepearl studio</span>
+        </p>
+        <div className="course-card__meta">
+          <span className="course-card__level">
+            <BarChart3 size={15} fill="currentColor" aria-hidden="true" />
+            Beginner
+          </span>
+          <AvatarStack />
+        </div>
+        <p className="course-card__price">
+          <strong>$25</strong>
+          <span>/lifetime</span>
+        </p>
+      </article>
+    </Link>
   );
 }
 

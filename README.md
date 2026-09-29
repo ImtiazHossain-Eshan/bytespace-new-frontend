@@ -8,7 +8,7 @@ Frontend implementation for the Doin Tech Jr. Software Engineer (Frontend) asses
 
 ## Design
 
-[ByteSpace New Figma file](https://www.figma.com/design/26TBgRjmpuxudcErJsHUfy/ByteSpace-New-Check-website?node-id=0-1&p=f&t=eQOrqJmq6rMG5b6L-0). The supplied PDF export was used to inspect the complete landing page and the login and registration frames. Images embedded in that export were extracted, optimized as WebP, and stored locally in `public/assets`.
+[ByteSpace New Figma file](https://www.figma.com/design/26TBgRjmpuxudcErJsHUfy/ByteSpace-New-Check-website?node-id=0-1&p=f&t=eQOrqJmq6rMG5b6L-0). The supplied PDF export was used to inspect all nine frames, including the landing page, auth pages, course catalog, course detail states, creator profile, and branded 404. Images embedded in that export were extracted, optimized as WebP, and stored locally in `public/assets`.
 
 ## Stack
 
@@ -17,6 +17,10 @@ Next.js App Router, React, TypeScript, Tailwind CSS 4, component CSS, Poppins, a
 ## Features
 
 - Complete landing page: hero, partner strip, featured courses, learning paths, learner and creator sections, creator call to action, testimonials, and footer.
+- Course catalog with URL based search, category, sort, and pagination state, including honest empty results.
+- Course detail route with About, Lessons, and Reviews tabs, preview dialog, share behavior, creator profile link, and signup enrollment handoff.
+- Creator profile with follow state, sorting, course links, and responsive catalog.
+- Branded 404 page connected to the app router.
 - Search and category filters with URL based state, including honest empty results.
 - Responsive navigation and layouts for phone, tablet, and desktop.
 - Login and registration pages with labels, autocomplete, validation, keyboard submission, and password visibility controls.

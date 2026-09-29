@@ -76,7 +76,7 @@ export function Footer() {
           <nav className="footer-links" aria-label="Footer navigation">
             <div>
               <h2 className="sr-only">Browse</h2>
-              <Link href="/#courses">Featured Courses</Link>
+              <Link href="/courses">Featured Courses</Link>
               <Link href="/#paths">Featured Categories</Link>
               <Link href="/?category=Business#courses">Business</Link>
               <Link href="/?category=IT%20%26%20Software#courses">IT</Link>
@@ -94,8 +94,8 @@ export function Footer() {
             </div>
             <div>
               <h2 className="sr-only">Platform</h2>
-              <Link href="/#creators">Become a Creator</Link>
-              <Link href="/#creators">Affiliate Program</Link>
+              <Link href="/signup">Become a Creator</Link>
+              <Link href="/signup">Affiliate Program</Link>
               <Link href="mailto:hello@doin.tech">Contact</Link>
               <Link href="/#footer">Help</Link>
               <Link href="/#community">About</Link>

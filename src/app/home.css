@@ -282,6 +282,23 @@
   border-radius: 24px;
   background: #fff;
 }
+.course-card-link {
+  display: block;
+  color: inherit;
+  border-radius: 24px;
+}
+.course-card-link:hover .course-card,
+.course-card-link:focus-visible .course-card {
+  border-color: var(--blue);
+  box-shadow: 0 12px 28px rgba(0, 59, 226, 0.1);
+  transform: translateY(-3px);
+}
+.course-card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
 .course-card__image {
   position: relative;
   height: 195px;
