@@ -38,11 +38,8 @@
     <rect x="727" y="282" width="84" height="25" rx="12" fill="#CBFC01"/>
     <rect x="824" y="282" width="112" height="25" rx="12" fill="#E6E9F3"/>
   </g>
-  <g transform="translate(90 420) scale(1.9365)">
-    <path d="M0 0H12.5V16H0V0Z" fill="#D4FB20"/>
-    <path d="M0 16H12.5C21.2 16 28 22.7 28 31.5H14C6.3 31.5 0 25.3 0 16Z" fill="#D4FB20"/>
-    <path d="M12.5 0V16H28C28 7.3 21.2 0 12.5 0Z" fill="#D4FB20"/>
-    <path d="M12.5 16H28L12.5 31.5V16Z" fill="#003BE2"/>
-    <text x="40.25" y="22.2" fill="#F5F5F6" font-family="Arial, sans-serif" font-size="17.5" font-weight="700" letter-spacing="-.6">ByteSpace</text>
+  <g transform="translate(90 420)">
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA/CAYAAACxdtubAAAEqUlEQVR4AeSZW3LbNhSGf+qW6Zu8A+S1dafSCiqvoO4K6q4g6gpircDqCpyuwO0KlB3IbZ3k0dxB9JaMSYn5f4T0WI5uNAGISjA8gsQLgI/nAuCocZOYjPKeMqVM3iTm5f+JGeArK42cp8u6RxlkwHkETAj9/s2duby5MzqPQy8F6CqObhbhDBGspt99MAYHXDaBPsQazFu4fZuYi2lmpP2H1w7i+66gFmYBDDsJpoeo3VKgoqU5m0UTk0Pz3dKgBSx996BgnwQqWEpXsIdixlVAyYquzPgQAlRVUMhnn6V4Keo6S2VQwSka13015QRUsFxN1VqrzkAJO6izVl2CMgjjFwLX8nAKSsKzukZg16DdVopa7nZcg9bWfH2AGpQu/h9wDppl+DZMl7bbRQ2Lc42S8ZsBBfNNSrhVFZuwY7Lu6u2deVF1/+tDo1QqZqheZBk9JutOFxHGdIkpk3W3lMunbA29gEYRXIDicdFOiXKm/FVZYC+gyHANz0XA2gvffDTDXbryAkpzi3fpvOo9hDVo4kLa3bb09AX6T1WIMs8T+GxbdtILaNqCTNeLn2JNIazNTq4LVF5A+1EsyFdrxuTttGAZqK5WmbEXUJHQT4Oar/rMpbcqh+UN9Md2/JodS1iFPZTD+i81pw979QaqTqjVkep9SHOBpf+JvILmWh3vA1T+2knxoujbK6g6SVoYIUKMPRRa1LAITN5BFYGTJk7IqUjMKujRfZbgN/W4E6hurCKEjZHtB5YbAhuUgoDqJR134msLG96MezLfYKAFrDXjsLA2MxkUVLAyY8L2+T1YNG5m+Ck4KAFB2NlxO/6DEfk5f3tfVHAB0dsLKOHsQeCYwCf03T4iaG3sJTIzEdDdKyjyokB13Ip/J/RRExjwn7lzANK0k10Q59N6gCIvio4pEGlghJ1JE3BUpFEv5lJmfPq7kZnDi3aKWwJO+OyQsKdMhht+V5KMVbWjwbe2N9AccFLAEcUJFNtZPjLEDQRIZC33CshECTmOAGlv8Pi669802+sGTSR23fCm9t5lxnTmmBLyfmex6X4X12i1FjRYJkDZ9nlKhWaQ7yFU+djCv41QiSxBcq6Uqfrxw/Vv7TXn61lDH7xHkzUrP4fMNWrgiq2HhgRfrmWjnwL0U2/mq8CzmGOSTxUIWhhtuRD5S31a0DzloZWIzjmVVorzLLBPFgDR52Wl/WlB9Y1aHal2KdZkAVfRtdzQqM0f2vE90z1orlWnWydG2Mtyo3N4dwNaL6Mo96A6wW3TiM7rZF61URbwvhjA6jIufLO4vASqCMxNsZNEFqPs3kzWKqwgzOslUJ0jbAwHiSwGIJuUUpvBhH6ZzHHS//zfz1K3X4DqqvaHFvaJuR2uY2WyYefMAvK7OBbDY1kJqpsEa834CbBs9Ge1EUq4bv47aaPfXwOpcXBMqlYLTSAmbJ9XS0VjTlXSKB/zfsy4KxlyGvmVY9243dwIqmGqAaY4yiayQpjtmEHn+fed+E+Nc5tsBS0aIHCZRJYpnnNcz2im5wQ80svnmDZq8WHfO4MWD8l3OUdtS2S50OiMSzjNAK9knkqaEe6IZjoqA1iM+xMAAAD//yM7vOkAAAAGSURBVAMAnXjU/2v8hGkAAAAASUVORK5CYII=" x="0" y="0" width="58" height="63" preserveAspectRatio="none"/>
+    <text x="78" y="43" fill="#F5F5F6" font-family="Arial, sans-serif" font-size="33.9" font-weight="700" letter-spacing="-1.16">ByteSpace</text>
   </g>
 </svg>
