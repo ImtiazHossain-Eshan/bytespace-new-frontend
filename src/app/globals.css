@@ -107,8 +107,8 @@ img {
   line-height: 1;
   white-space: nowrap;
 }
-.brand svg {
-  color: var(--lime);
+.brand__mark {
+  display: block;
   flex: none;
   width: 28.88px;
   height: 31.5px;
@@ -386,7 +386,7 @@ img {
   .brand {
     font-size: 20px;
   }
-  .brand svg {
+  .brand__mark {
     width: 24px;
     height: 26.25px;
   }
